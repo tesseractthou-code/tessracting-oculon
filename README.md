@@ -1,6 +1,7 @@
 # 👁️ Oculon Web Maps (GitHub Pages Portal)
 
 Live static web map mirror for **OCULON: Predictive Crime Hotspot Mapping Assistant**.
+Optimized for **Google Chrome**, **Microsoft Edge**, **Brave Browser**, **Apple Safari**, and **Mozilla Firefox**.
 
 - **Live Website**: [https://tesseractthou-code.github.io/tessracting-oculon/](https://tesseractthou-code.github.io/tessracting-oculon/)
 - **Upstream Source Code**: [https://github.com/abhyudaymishr/bob-ai-hackathon-oculon](https://github.com/abhyudaymishr/bob-ai-hackathon-oculon)

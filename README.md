@@ -4,7 +4,7 @@ Live static web map mirror for **OCULON: Predictive Crime Hotspot Mapping Assist
 Optimized for **Google Chrome**, **Microsoft Edge**, **Brave Browser**, **Apple Safari**, and **Mozilla Firefox**.
 
 - **Live Website**: [https://tesseractthou-code.github.io/tessracting-oculon/](https://tesseractthou-code.github.io/tessracting-oculon/)
-- **Upstream Source Code**: [https://github.com/abhyudaymishr/bob-ai-hackathon-oculon](https://github.com/abhyudaymishr/bob-ai-hackathon-oculon)
+- **Upstream Source Code**: [https://github.com/abhyudaymishr/oculon](https://github.com/abhyudaymishr/oculon)
 - **Live Hugging Face Space & MCP Server**: [https://abhyudaymishr-oculon.hf.space](https://abhyudaymishr-oculon.hf.space)
 
 ---
@@ -20,4 +20,4 @@ Optimized for **Google Chrome**, **Microsoft Edge**, **Brave Browser**, **Apple 
 
 ---
 
-*Automatically generated and deployed via GitHub Actions CI/CD from `abhyudaymishr/bob-ai-hackathon-oculon`.*
+*Automatically generated and deployed via GitHub Actions CI/CD from `abhyudaymishr/oculon`.*

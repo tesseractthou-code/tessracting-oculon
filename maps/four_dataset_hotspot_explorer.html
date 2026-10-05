@@ -729,7 +729,6 @@ svg#map {
 <aside class="query-card">
   <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
     <h2 style="margin:0;font-size:15px">Dynamic Hotspots & Search</h2>
-    <span class="live-pill" id="api-status-pill"><span class="dot-live"></span> CI/CD v2 Connected</span>
   </div>
   <div class="small">Dynamic location search across all Delhi metro stations, districts & police jurisdictions:</div>
   <div class="query-tools" style="margin-top:8px">
@@ -1285,7 +1284,7 @@ if (!document.getElementById('layer-dynamic')) {
 async function dispatchCiCdRequest(dataset, queryText, topK) {
   const pill = document.getElementById('api-status-pill');
   if (!pill) return;
-  pill.innerHTML = '<span class="dot-live" style="background:#f59e0b"></span> CI/CD Syncing...';
+  // status quiet
   
   try {
     const url = `https://abhyudaymishr-oculon.hf.space/api/hotspots?dataset=${dataset}&query=${encodeURIComponent(queryText)}&top_k=${topK}`;
@@ -1294,12 +1293,12 @@ async function dispatchCiCdRequest(dataset, queryText, topK) {
     const resp = await fetch(url, { signal: ctrl.signal });
     clearTimeout(timer);
     if (resp.ok) {
-      pill.innerHTML = '<span class="dot-live" style="background:#10b981"></span> CI/CD Live Connected';
+      // status quiet
     } else {
-      pill.innerHTML = '<span class="dot-live" style="background:#3b82f6"></span> CI/CD Fast Local Engine';
+      // status quiet
     }
   } catch (e) {
-    pill.innerHTML = '<span class="dot-live" style="background:#3b82f6"></span> CI/CD Fast Local Engine';
+    // status quiet
   }
 }
 
@@ -1320,7 +1319,7 @@ if (!document.getElementById('layer-dynamic')) {
 async function dispatchCiCdRequest(dataset, queryText, topK) {
   const pill = document.getElementById('api-status-pill');
   if (!pill) return;
-  pill.innerHTML = '<span class="dot-live" style="background:#f59e0b"></span> CI/CD v2 Syncing...';
+  // status quiet
   
   try {
     const url_v2 = `https://abhyudaymishr-oculon.hf.space/api/v2/hotspots?dataset=${dataset}&query=${encodeURIComponent(queryText)}&top_k=${topK}`;
@@ -1329,12 +1328,12 @@ async function dispatchCiCdRequest(dataset, queryText, topK) {
     const resp = await fetch(url_v2, { signal: ctrl.signal });
     clearTimeout(timer);
     if (resp.ok) {
-      pill.innerHTML = '<span class="dot-live" style="background:#10b981"></span> CI/CD v2 Connected';
+      // status quiet
     } else {
-      pill.innerHTML = '<span class="dot-live" style="background:#3b82f6"></span> CI/CD Fast Local Engine';
+      // status quiet
     }
   } catch (e) {
-    pill.innerHTML = '<span class="dot-live" style="background:#3b82f6"></span> CI/CD Fast Local Engine';
+    // status quiet
   }
 }
 
